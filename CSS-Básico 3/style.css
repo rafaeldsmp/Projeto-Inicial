@@ -1,0 +1,204 @@
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+/* Página de contato */
+.contato {
+	width: 940px;
+	margin: 40px auto;
+}
+
+.contato label, .input-group legend {
+	display: block;
+	margin: 0 0 5px;
+	font-size: 20px;
+}
+
+.campo-padrao, textarea {
+	display: block;
+	margin: 0 0 30px;
+	padding: 10px 20px;
+	width: 50%;
+	border: 1px solid #aaa;
+}
+
+.input-group {
+	margin: 0 0 20px;
+}
+
+.newsletter {
+	margin: 0 0 20px;
+}
+
+.botao {
+	margin: 20px 0 0;
+	width: 30%;
+	padding: 10px 20px;
+	font-size: 24px;
+	display: inline-block;
+	background: orange;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	transition: 1s;
+}
+
+.botao:hover {
+	cursor: pointer;
+	transform: scale(1.2);	
+}
+
+.funcionamento {
+	width: 940px;
+	margin: 0 auto 40px;
+}
+
+table {
+	margin: 10px 0 0;
+}
+
+main{
+	width: 940px; /*largura*/
+	margin: 0 auto; /*margem*/
+}
+
+form{
+	margin: 40px 0; /*margem de 40px superior e inferior e 0 para os lado*/
+}
+form label, form legend{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px; /*margem entre a label e o campo logo abaixo dela (espaçamento interno entre conteúdo e borda), margem para baixo de 10px*/
+	
+}
+.input-padrao { /*com isso garanto o mesmo tamanho para o meu textarea do meu código*/
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px; /*mexr no espaçamento interno 10px cima embaixo e 25px aos lados*/
+	width: 50% /*mexer na largura do campo*/;
+}
+.checkbox{
+	margin: 20px 0; /*margem pra cima e pra baixo de 20 px*/
+}
+.enviar{
+	width: 40%; /*mexer na largura do botão de enviar;*/
+	padding: 15px 0; /*espaçamento interno, botaremos 15px para cima e para baixo e 0 para os lados*/
+	background: orange;
+	color: white;
+	font-weight: bold;/*deixar em negrito*/
+	font-size: 18px; /*aumentando o tamanho da fonte*/
+	border: none;
+	border-radius: 5px; /*terá a borda com os cantos arredondada*/
+	transition:1s all;/*agora o background não irá instantaneamente do laranja, mas sim em segundos*/
+							/*se tirarmos o background e colocarmos o all, terá efeito em todos os elementos, deixando mais limpo e mais dinamico o efeito de aumentar*/
+	cursor: pointer;/*quero que sempre que o mouse está em cima do elemento o curso seja a mãozinha para saber que pode enviar*/
+}
+.enviar:hover{ /*mudar quando o mouse passar por cima*/
+	background: darkorange;
+	transform: scale(1.2);/*Nesse transform, ao passar o mouse eu aumento o tamanho, 
+							a medida é calculada da seguinte maneira, se eu quero aumentar 20% (1.2) que seria 100*200*/
+	transform: rotate(70deg) scale(1.2);/*Ele rotaciona o item ao passar o mouse (houver) em 70 graus*/
+				/*no HTML as funções são lidas de cima para baixo, por ter 2 transforms a rotate irá eliminar a scale, logo para o efeito das duas
+				aparecer eu devo colocalas na mesma linha transform:  rotate(70deg) scale(1,2);*/
+}
+table{
+	margin: 20px 0 40px;/*espaçamento externo de 20px para cima e0 para esquerda e 40 para baixo*/
+}
+thead{
+	background:#555555;
+	color: white;
+	font-weight: bold;
+}
+td, th{
+	border: 1px solid #000000; /*quero que a borda seja de 1px, cor sólida, preta*/
+	padding: 8px 15px;/*espaçamento lateral de 15px e para cima e para baixo de 8px*/
+}
+

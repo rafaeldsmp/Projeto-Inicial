@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Barbearia Alura</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		<header>
+
+			<div class="caixa">
+
+				<h1><img src="logo.png"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+
+		</header>
+
+
+		<img class="banner" src="banner.jpg">
+	<main>	
+		
+		<p>Linha para explicar sobre os Seletores Avançados</p>
+
+		<section class="principal">
+			<h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+
+			<img class="utensilios" src="utensilios.jpg" alt="utensilios de um barbeiro">
+	 
+			<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+			<p id="missao"><em>Nossa missão é:<strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+			<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+		</section>
+
+		<section class="mapa">
+			<h3 class="titulo-principal">Nosso estabelecimento</h3>
+			<p>Nosso estabelecimento está localizado no coração da cidade!</p>
+			<div class="mapa-conteudo">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d58513.83498351407!2d-46.6271831761146!3d-23.564324153028963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salura%20s%C3%A3o%20paulo!5e0!3m2!1spt-BR!2sbr!4v1643432820801!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</section>
+
+		<section class="beneficios">
+			<h3 class="titulo-principal">Benefícios</h3>
+			<div class="conteudo-beneficios"> 
+				<ul class="lista-beneficio">
+					<li class="itens">Atendimento aos Clientes</li>
+					<li class="itens">Espaço diferenciado</li>
+					<li class="itens">Localização</li>
+					<li class="itens">Profissionais Qualificados</li>
+					<li class="itens">Pontualidade</li>
+					<li class="itens">Limpeza</li>
+				</ul><img src="beneficios.jpg" class="imagem-beneficios"> <!--para exibir junto esses elementos devem estar colados-->
+			</div>
+
+			<div class="video">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+		</section>
+	</main>
+
+		<footer>
+			<img src="logo-branco.png">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+	</body>
+
+</html>
+<!--REFAZENDO A PÁGINA INICIAL
+para um bloco onde o conteúdo tenha o mesmo significado, o mesmo sentido, usamos uma <section>
+Uma <div> é usada no oposto, quando a divisão for só "visual".
+Ao criar um estilo qualquer, qual o melhor padrão para marcar o nosso conteúdo, ao criar uma classe?
+Um balanço é a melhor alternativa. Nem tão específica, para poder repetir as classes, e nem tão genérica, para poder não precisar combinar classes.
+
+USANDO O FLOAT
+para colocar a imagem num cantinho, para isso adicionamos uma nova imagem.
+o float colocamos um elemento em flutuação, ele descola da página, mas a sombra dele, o espaço continua sendo ocupado. quando esse elemento levanta todos os elementos levantam para ficar nessa linha. mas como a sombra está os elementos ficam em volta.
+no CSS = float: left (lado que queremos que ele flutue);
+todos os elementos abaixo do float são afetados, para melhorar a formatação usamos o clear: left (o float que usamos)
+
+FONTES EXTERNAS
+o site da google com fontes gratuitas: https://fonts.google.com/
+entramos no site, depois em link e colamos como se fosse o CSS.
+temos que especificar no CSS que estamos usando essa familia de fonte. quando declaramos ela no CSS (ex: font-family: 'Montserrat', sans-serif;), ele vai aplicar isso a todo conteúdo dentro do site se estiver no body.
+
+TRABALHANDO COM MAPAS
+Para usar o mapa usaremos o serviço de maps do google maps.google.com, digitamos o endereço, vamos ao menus ao esquerdo em "compartilhar ou incorporar o mapa", (exibindo a possibilidade de exibirum link para aquele mapa em específico), depois selecionamos o incorporar um mapa copiamos o html e usamos .
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d58513.83498351407!2d-46.6271831761146!3d-23.564324153028963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salura%20s%C3%A3o%20paulo!5e0!3m2!1spt-BR!2sbr!4v1643432820801!5m2!1spt-BR!2sbr" width="600"(que é a largura) height="450" (que é a altura) style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+IMPORTANDO VÍDEO
+Para usar o vídeo no nosso site, usamos o youtube e iremos em compartilhar e depois ir em incorporar:
+ <iframe width="560"(largura) height="315" (altura) src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+PSEUDO-CLASSES
+Vemos alguns como :hover, :active, quando estamos com um link usamos o :visited, no nosso formulário usamos o :required.
+Podemos usar as pseudoclasses ex no CSS: .itens: podemos chamar de tres formas, a primeira é usar uma classe pseudoelemento chamada first-child, ele vai pegar de todos os irmãos e todas as childs o primeiro dos itens da lista.
+
+APLICANDO GRADIENTES
+para fazer transição de um fundo branco para um cinza
+quando queremos fazer um gradiente no CSS usamos o background: linear-gradient(orange,blue); podemos colocar quantas cores quisermos que ele vai administrando essas cores.
+Nessa propriedade eu posso dizer qual a inclinação que eu quero que tenha. ex background: linear-gradiente(45deg, orange,black)
+
+PSEUDO-ELEMENTOS
+São elementos que criamos via CSS que não existem no HTML, o CSS deixa manipular um só element.
+ex: primeira letra do título principal
+o primeiro é:
+.titulo-principal: first-letter {
+	font.weight: bold;
+}
+a segunda maneira foi o:
+eles criam um espaço onde o CSS pode ser usado antes do elemento, usamos sempre a propriedade content: "colocamos o que quisermos"ex:
+.titulo-principal: before{
+ 	content: " [";
+}
+.titulo-principal: after {
+	content:" ]";
+}
+Esse novo conteúdo não será selecionavel com o mouse.
+
+SELETORES AVANÇADOS
+Para evitar a criação de classes especificas de uma linha, com os seletores temos possibilidades de chamar os filhos diretos ex: chamar todos os <p></p> que são filhos diretos da main é dado como:
+main > p{ /usando o sinal de maior chama todos os p que são filhos do main
+agora podemos manipular os elementos filhos a partir do pai.
+
+se eu quiser selecionar sempre o parágrafo depois de uma imagem eu uso o:
+img + p{
+	background: "color";
+}
+
+CALCULO COM CSS
+Calcular largura, altura dinamicamente de um elemento para nosso site está preparado com diversos tamanhos para dispositivos diferentes. com o CSS3 foi feito para melhorar adequar a outras plataformas
+Hoje em dia usamos a propriedade width: calc(40% - 26%); (no caso é o primeiro valor, a operação que quero fazer, e o que quero de resultado)
+Como usar as medidas proporcionais para deixar um elemento de 100% de largura com o equivalente a um terço do elemento pai, menos 10px?
+width: calc( 33% - 10px )
+Essa é a forma mais direta!
+width: calc( (100% / 3) - 10px )
+Essa é uma forma mais complexa, não precisa dessa primeira conta!
+
+OPACIDADE NOS ELEMENTOS
+Opacidade é como se fosse uma camada a mais que é posta em cima do elemento, essa camada ajuda a luz a passar ou não e temos vários níveis que esconde a luz, a pelicula que adicionamos por cima de um elemento.
+para adicionar opacidade usamos a propriedade opacity: 0 (ela vai de 100% a 0, ou seja ela vai de 1 a 0, se eu quero exibir 30% é 0.3) 
+Hoje a opacidade pode ser colocado em tudo e até mesmo nas cores ex:
+Hoje com o CSS 3 podemos usar mais uma camada que é a de opacidade (camada alfa) nas cores em RGB, para isso usamos o RGBA ex: color: rgba(0,0,0,0.3)
+
+SOMBRA NOS ELEMENTOS
+É como se estivesse adicionando uma luz em cima do elemento e vai refletir a sombra dele por baixo, a propriedade da sombra é o box-shadow: X Y #000000; (ela tem a propriedade do eixo x e eixo y e uma cor)
+Podemos também criar sombra internas:
+usaremos a seção de beneficios 
+box-shadow: inset 0 0 30px #FF0000; (criação de sombra interna, ela irá ser posicionada a partir do centro)
+Também podemos fazer sombra em textos
+para isso usamos o text-shadow: 0 0 #FF0000 (criação de sombra com a cor que desejamos) 
+
+META TAG DE VIEWPORT
+
+Versões mobile para nossso site, hoje a mior parte do fluxo vem de dispositivos móveis.
+formas de testar se a página está adaptada para celular, pensando nisso, apertando no F12 (função de desenvolvedor e indo em toggle device toolbar (ao lado da cetinha)).
+Detalhes importantes para se entender um bom andamento do site no celular.
+1º entender quantos pixels tem na tela para se exibir (quantos pixel tem, na tela do usuário), hoje nossa tela se adapta ao tamanho que o navegador tiver ( sendo que o mínimo são 940px), isso no celular é diferente, que mesmo que a resolução do celular seja de 2000px de largura, sempre as resoluções dos celulares são diferentes da quantidade de pixel que existe na tela. isso é chamado de DPI (densidade de pixel por polegada), e hoje um celular tem 320px de largura de tela. 
+Para isso usamos a tag meta novamente
+<meta name="viewport" content="width=device-width"> (dessa vez vem com a propriedade name e o valor que é viewport (ou seja a quantidade de pixel que tem naquela visualização da tela), queremos sair ainda qual a largura para isso usamos o content, com o valor largura = a largura do dispositivo width=device-width), e com isso passamos a entender e adaptar nosso site para o celular.
+Agora precisamos adaptar nosso CSS para que funcione na tela escolhida, no CSS abaixo do conteúdo precisamos entregar para telas até 480px um estilo diferente, fazemos isso através dos mídias quarry, eu vou perguntar ao meu navegador qual o tamanho daquela tela e se for o tamanho que eu quero eu vou entregar um estilo diferente.
+para fazer eu usso:
+@media screen and (max-width: 480px){
+	body{
+	background: red;
+	}
+} 
+
+ADAPTAR UMA PÁGINA PARA O CELULAR
+Para isso precisamos mexer bastante no CSS na media quarry @media. o que é importante é perceber o que está acontecendo:
+1º coisa: observar é que ao passar o mouse nosso cabeçalho tem 940x253(940px de largura),
+
+Qual a principal tática para não perder muito tempo criando layouts responsivos?
+-Usar medidas proporcionais para tudo
+É hoje a melhor forma de criar qualquer conteúdo.
+-Criar um layout fluido que se adapte sempre
+É uma forma perfeita de evitar retrabalho. 
+-->

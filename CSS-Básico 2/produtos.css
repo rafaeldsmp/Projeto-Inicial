@@ -1,0 +1,89 @@
+header{
+	background: #BBBBBB;
+	padding: 20px 0;  /*espaçamento interno pra cima e pra baixo de 20 e 0 da direita para a esquerda */
+}
+.caixa{		/*atribuindo um tamanho fixo*/
+	position: relative; /*quero que essa caixa levante, que tenha um posicionamento relativo*/
+	width: 940px; /*essa largura é uma largura padrão que se usa na web, de boa imagem*/ 
+	margin: 0 auto; /*quero que a margem pra cima e para baixo seja 0 e para esquerda e direita automaticamente  */
+}
+nav{
+	position:  absolute;
+	top: 110px;
+	right: 0;
+}
+nav li{
+	display: inline;
+	margin: 0 0 0 15px;
+}
+nav a{
+	text-transform: uppercase; /*deixar tudo maiusculo*/
+	color: #000000; /*definiu a cor do texto*/
+	font-weight: bold; /*deixamos com peso em negrito*/
+	font-size: 22px; /*aumentar o tamanho da fonte*/
+	text-decoration: none; /*tiramos o sublinhado da decoração padrão*/
+ }
+nav a:hover{
+	color: #C78C19; /*ao passar o mouse ele fica nessa cor escolhida o chamando atenção*/
+	text-decoration: underline; /*fica sublinhado quando o mouse estiver sobre o link*/
+
+}
+ .produtos {
+ 	width: 940px;
+ 	margin: 0 auto;
+ 	padding: 50px 0; /*espaçamento interno */
+
+ } 
+ .produtos li{
+ 	display: inline-block; /*Um dos problemas do inline-block é que ele alinha os elementos pela linha de baixo para ter base na linha de cima
+ 							usa o vertical-align:  top*/
+ 	text-align: center;
+ 	width: 30%; /*Mecher na distribuição dos 3 items, colocando o tamanho deles iguais, para que cada um deles tenham 1/3 do conteúdo, 
+ 			o css entende em percentual 30% */
+ 	vertical-align: top;
+ 	
+ 	margin: 0 1.5%; /*Espaçamento externo- para dar espaço entre um e outro 0 para cima e para baixo, e 1,5% para os lados, o tamanho do espaçamento entre as bordas*/
+  	padding: 30px 20px; /*Para auemtar o espaçamento interno 30 para cima e baixo e 20 para as laterais*/
+  						/*O elemento aumenta o seu tamanho. Quando declaro que existe um espaçamento interno, estou aumentando o conteúdo.*/
+  	box-sizing: border-box; /*Mudando a forma que o navegador pensa para que esteja dentro do porcentual, com isso os meus 30% do width agora são definitivos
+  							e os pixel de espaçamento interno(padding) estão dentro dos 30%*/ /*como botar o conteudo para se comportar de acordo com a largura que criamos em percentual*/
+	border-color: #000000;
+	border-width: 2px;
+	border-style: solid;
+	border-top-width: 10px; /*faz ter o espaçamento em cima maior de 10px*/
+	/*border:  2px solid #000000; uma linha que faz as tres coisas tamanho, configuração e tipo e por ultimo a cor*/
+	border-radius: 10px /*arredonda todas iguais*/;
+	}
+.produtos li:hover {  /*quando o mouse estiver por cima*/
+	border-color: #C78C19;
+}
+.produtos li:active {
+	border-color: #088C19;
+} 
+.produtos li:hover h2{
+	font-size: 34px;
+}
+ .produtos h2{
+ 	font-size: 30px; /* aumenta o tamanho da fonte */
+ 	font-weight: bold;  /*negrito*/
+ }
+
+ .produto-descricao{
+ 	font-size: 18px;
+ }
+
+ .produto-preco{
+	font-size: 22px;
+ 	font-weight: bold;
+ 	margin: 10px; /* igual a escrever margin: top 10px*/ /*espaçamento interno para não colocar muito na descrição, para cima */
+ }
+footer{
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0; /*(espaçamento interno 40px para cima e para baixo e 0 a esquerda e direita) */
+ }
+ .copyright{
+ 	color: #FFFFFF;
+ 	font-size: 13px;
+ 	margin: 20px 0 0;/*espaçamento entre imagem e texto*/
+ }

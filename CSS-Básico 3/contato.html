@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contato - Barbearia Alura</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="caixa">
+			<h1 > <img src="logo.png" alt="logo da barbearia Alura"></h1>
+			<nav> 
+				<ul>
+					<li> <a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li> <a href="http://www.google.com.br">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+<body>
+<main>
+	<form>
+		<label for="nomesobrenome">Nome e Sobrenome </label>
+		<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+		<label for="email">E-mail</label>
+		<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+		<label for="telefone">Telefone</label>
+		<input type="tel" id="telefone" class="input-padrao" required placeholder="(xx)xxxx-xxxx">
+
+		<label for="mensagem">Mensagem</label>
+		<textarea cols="10" rows="10" id="mensagem" class="input-padrao" required> </textarea>
+		<fieldset>
+			<legend>Como Prefere o nosso contato?</legend>
+			<label for="radio-email"><input type="radio" name="contato" value="E-mail" id="radio-email">E-mail</label>
+
+			<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone </label>
+			
+			<label for="radio-whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+			
+		</fieldset>
+		<fieldset>
+		<legend>Qual o horário prefere ser atendido?</legend>
+		<select>
+			<option>Manhã</option>
+			<option>Tarde</option>
+			<option>Noite</option>
+		</select>
+		</fieldset>
+
+		<label class="checkbox"><input type="checkbox" checked > gostaria de receber nossas novidades por e-mail?</label>
+		<input type="submit" value="enviar formulário" class="enviar">
+	</form>
+	
+	<table>
+		<thead>	
+			<tr>
+				<th>Dia </th>
+				<th>Horario</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Segunda</td>
+				<td>8h ~ 20h </td>
+				<td>8h ~ 20h </td>
+				<td>8h ~ 20h </td>
+				<td>8h ~ 20h </td>
+				<td>8h ~ 20h </td>
+			</tr>
+			<tr>
+				<td>Quarta</td>
+				<td>8h ~ 20h </td>
+			</tr>
+			<tr>
+				<td>Sexta</td>
+				<td>8h ~ 20h</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+</main>
+</body>
+<footer>
+		<img src="logo-branco.png" alt="logo da barbearia Alura">
+		<p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+</footer>
+</body>
+</html>
+</html>
+
+<!--CAMPOS BÁSICOS
+Nosso formulario tem a estrutura para agrupar informações que o usuário irá inserir, e a tag é <form></form>, quando o usuário está entrando os dados ele está fazendo um input da informação <input type="text" id="nomequeeuquero"> toda vez que temos um imput temos que colocar um identificador nele
+dentro de um formulario não usamos tags como <p></p> mas sim etiquetas para um imput que é um label <label></label> e no label eu adiciono um for = "nomequeeuquero". o for e o id andam juntos.
+quando quero digitar algo no imput eu clico no campo e começo a digitar, quando meu mouse não está no campo para digitar posso clicar no label no texto para facilitar a vida do usuário.
+todo o formulario tem um input que é do tipo submit <input type="submit" name="">ou seja de envio, aonde mando o formulario para servidor, por e-mail ou para uma próxima página.
+para garantir que o submit terá sempre o nome enviar independende do sistema operacional, eu uso o value que ficaria como: <input type="submit" valuer="o texto que eu quiser no lugar de enviar">
+
+ESTILOS PARA FORMULÁRIO
+Feitos no documento do CSS style.css
+
+FORMULÁRIOS MAIS COMPLEXOS
+<textarea></textarea> eu quero que o usuario tenha possibilidade de por mais de um conteúdo de texto, nele posso definir quantas colunas eu tenho coluns="" e o numero de linhas = rows
+usaremos a tag label junto com o for para dizer o conteúdoex <label for="mensagem"></label>
+para montar o campo selecionar é o radiobox com oopções referentes ao único campo, criamos um input com o tipo "radio" ex:
+<input type="radio" name="contato" value="nomequeeuquiser" id"iddalabel">, usando o name ele faz com que as propriedades escolhidas não possam ser escohidas mais de uma, podendo apenas escolher uma das com o mesmo nome, deixando elas no mesmo grupo.
+A opção checkbox é aonde eu marco ou desmarco algum item <label><input type="checkbox">Texto que quiser</label> tudo é um mecanismo para fazer mais rápido sem precisar por um for em um label
+
+CSS PARA FORMULÁRIOS COMPLEXOS
+para que nosso radio fique alinhado com a label, usaremos uma classe ou um identificador, adicionando todas as forms input a mesma classe/identificadores
+criar uma classe no checkbox para não ficar colado no espaço 
+
+HIERARQUIA NO CSS
+inline 1000		p=1
+id  100			form+p=2
+class 10		.teste 10
+tag 1
+
+SELECIONANDO OPÇÕES
+O seletor não é do campo tipo input e sim do tipo select que tem dentro dele várias opções com valores  ex:
+<select> <option>"o que eu quero</option> <option>o que eu quero</option></select>
+
+INPUTS PARA CELULARES
+Nossos campos devem estar adaptados para o celular, tem um site chamado http://mobileinputtypes.com/, que mostra como nosso html poderia ficar melhor, principalmente os input type para adequar ao teclado
+
+DADOS IMPORTANTES NOS INPUTS
+Importante sabermos o nome e sobrenome, telefone,email	como campos obrigatórios. quando temos o input e queremos deixar ele obrigatório usamos a tag required <input type="text" id="sobrenome" required>
+Para adicionar uma sugestão de preenchimento pode ser adicionada com a propriedade chamada placeholder placeholder="seuemail@dominio.com"
+no radio para sugerir uma opção, e querer que sempre seja marcado por default marcamos no input a tag checked como primeira a ser marcada
+
+MELHORANDO A SEMÂNTICA DO FORMULÁRIO
+no campo do formulário div e p não é usado, usamos tags específicas, não usamos div usamos a fieldset <fieldset></fieldset> ela é referente a configuração de um ou mais campos referente a um assunto específico, ex preenchimento de um dado de cartão de crédito ou dados de endereço. dentro dele não temos parágrafos temos títulos, que é chamado de legend.
+um dos campos muito importante quando falamos de acessibilidade é o campo alt em imagens, que é uma alternativa para imagens, usamos para descrever a imagem para pessoas com problemas de visão.
+
+O QUE SÃO TRANSIÇÕES
+melhorar visualmente o botão de enviar, feito no CSS, para ficar mais agradável a transição usaremos a propriedade transition transition: 1s background;
+
+ENTENDENDO TRANSFORMAÇÕES
+facilidades que o CSS3, se eu Quero aumentar o elemento ao passar o mouse em cima dele, eu uso o elemento transformer para aumentar a porcentagem que eu quero no CSS que é o transform: scale(x.x)
+outro transformer que inclina é o transform: rotate(x deg) (medida de graus)
+
+TABELA BÁSICA
+Para criar uma tabela criamos a tag <table></table> e dentro dela uma linha é uma table role tag é <tr></tr> e dentro delas temos uma cedula que será Td <td></td>
+<table>
+		<tr>
+			<td>Dia </td>
+			<td>Horario</td>
+		</tr>
+		<tr>
+			<td>Segunda</td>
+			<td>8h ~ 20h </td>
+		</tr>
+		<tr>
+			<td>Quarta</td>
+			<td>8h ~ 20h </td>
+		</tr>
+		<tr>
+			<td>Sexta</td>
+			<td>8h ~ 20h</td>
+		</tr>
+	</table>
+Configuração fica assim:
+Dia	Horario
+Segunda	8h ~ 20h
+Quarta	8h ~ 20h
+Sexta	8h ~ 20h
+
+TAGS SEMÂNTICAS PARA TABELAS
+Dentro da tabela, podemos usar tags específicas para cabeçalho, conteúdo e rodapé.
+dentro da tabela o cabeçalho marco com a tag <thead></thead>, dentro do cabeçalho para dizer que que a celula é uma celula do cabeçalho, ao invés de usar a tag td, usamos a tag <th></th> (celula do head da tabela. com isso temos um cabeçalho semantico
+podemos separar o corpo da tabela que podemos usar o <tbody></tbody>
+
+ESTILOS NA TABELA
+ver o CSS
+
+JUNTANDO CÉLULAS
+As tabelas também nos oferecem a possibilidade de juntar células e montar um visual diferente. Por exemplo, quando uma linha, que deveria ter 5 células, passa a mostrar só "uma célula".
+Esse efeito é conseguido através da propriedade colspan=X, onde X é o número de células que você quer agrupar.
+Portanto, em uma tabela de 5 colunas, para ter uma célula única na linha, usamos um código assim:
+<tr>
+    <td colspan="5">Rio de Janeiro</td> 
+</tr>
+Rowspan e colspan servem para expandir as células fazendo com que uma única célula ocupe mais de uma linha ou mais de uma coluna
+	-->

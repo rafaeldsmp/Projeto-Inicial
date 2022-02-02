@@ -1,0 +1,53 @@
+body{
+
+}
+#banner{
+	width: 100%;
+	height: 120px;
+}
+.principal{
+	background: #CCCCCC;
+	padding: 30px;
+}
+.tituloprincipal{
+	padding-left: 20px;
+}
+h2{
+	color: rgb(255, 0, 0);
+	text-align: center;
+	border: 10px solid #000000;
+	margin: 40px;
+	padding-top: 20px;
+}
+p{
+	text-align:center;
+}
+em strong /*coloca todos os strongs em vermelho que estão dentro de todos os ems*/
+ 	{
+		color: red; /* outras formas de expressar a cor vermelha:  color:  rgb(255, 0, 0); color:  #FF0000;*/ 	
+	}
+}
+#missao{
+	font-size: 20px
+
+}
+.itens{
+	font-style: italic;
+}
+.beneficios{
+	background: #FFFFFF;
+	padding: 20px;
+}
+ul{
+	display: inline-block;
+	vertical-align: top;
+	width:20%;
+	margin-right: 15%;
+}
+h3{
+	text-align: center;
+}
+.imagembeneficios{
+	width: 50%;
+}
+

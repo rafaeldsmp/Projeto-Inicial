@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Barbearia Alura</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header>
+			<h1 class="tituloprincipal">Barbearia Alura</h1>
+		</header>
+		<img id="banner"src="banner.jpg">		
+		<div class="principal">
+			<h2>Sobre a Barbearia Alura</h2>
+			<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+			<p id="missao"><em>Nossa missão é:<strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>. </em></p>
+			<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p> 
+		</div>
+
+		<div class="beneficios">
+			<h3>Benefícios</h3>
+			<ul>
+				<li class="itens">Atendimento aos clientes</li>
+				<li class="itens">espaço diferenciados</li>
+				<li class="itens">localização</li>
+				<li class="itens">Profissionais Classificados</li>
+			</ul>
+			<img src="beneficios.jpg" class="imagembeneficios">
+		</div>
+	</body> 
+	
+
+</html>
+
+<tag> </tag>
+<!--tag para marcar a importância de um conteúdo <strong> </strong> (um negrito)
+	enfase itálico <em> </em>
+	
+	Tag <!DOCTYPE html> tag iportante que vem no início do documento seguido da versão que é usado o html, ela não precisa ser fechada pois é tag de informação
+	logo em baixo <html> e no final </html> para identificar que é uma pagina html
+	
+	para aparecer acentuação usaremos a Tag <meta charset="utf-8> logo abaixo de html
+	>meta - tag que passa informações ao navegador 
+	>charset - conjunto de caracteres (caracter set)
+	>utf-8 - dicionario que tem todos os caracteres usados (já tem ceilha, crase e etc)
+
+	dentro do html é necessário colocar o idioma da nossa pagina adicionando o <html lang="pt-br">
+
+	TAG TITLE - TÍTULO DA PÁGINA <title</title>
+	
+	o html é dividido em duas partes: a primeira é o head <head></head> e a segunda é o body <body></body> 
+	Head> cabeça são as informações que estamos passando para o navegador 
+	Body>  informações que a gente quer exibir na página 
+
+	Para alterar a fonte, dentro do paragrafo <p></p> devo por o font-size ficando <p style="font-size: 20px"></p>, a fonte do computador é medida em pixel, o tamanho da fonte normal default do navegador é 16 pixels 
+	style>adiciona uma propriedade que é style
+	font-size> tamanho da fonte
+	px> medida que é feita
+
+	Para alinhar o conteúdo eu devo digitar o <h1></h1>	ou <p></p> e digitar o style="text-align: "center" que é o alinhar ao centro, centralizar o conteúdo
+
+	para por alinhar ao centro e o tamanho da fonte adicionaria um ";" ex: <p style="font-size: 20px; text-align: center"></p>
+	
+	existem três formas de configurarmos o CSS. A que fizemos até agora foi a primeira delas, a chamada CSS inline. Ou seja, na linha onde temos nossa tag, adicionamos a propriedade do CSS. 
+	A segunda é incluindo a estilização em cada tag na propriedade style, no mesmo arquivo html.
+	em head, <style>
+	p{
+		text-align:center
+	}
+	</style>
+	 A terceira forma é através de um arquivo externo. Para que a estilização seja aplicada de forma correta.
+	Para utilizar a estilização do arquivo style.css no index.html, precisamos incluir no head o seguinte código:<link rel="stylesheet" href="style.css">. criando um arquivo chamado style.css que inventamos e fazendo referencia.
+
+	Para referenciar um páragrafo de um código qualquer para inserir no style.css é utilizado o <p ou h id="nomequeeuquero">;
+	No CSS é identificado com #nomequeeuquero{ código CSS que eu quero}
+
+	Para adicionar imagem:
+	<img src="caminho do arquivo imagem">
+	img=imagem
+	src=sorce local que está a imagem
+	tag de chamada de arquivo externo
+
+	ALTURA:
+	height: 150px
+	LARGURA
+	wight: 150px ou 100% percentual
+	CRIAÇÃO DE BORDA
+	border: 10px solid #000000
+	ESPAÇAMENTO INTERNO
+	Trata-se de um respiro entre a borda e o texto podendo ser só em cima, só em baixo, só nas laterais ou todas as partes
+	padding:20px > todos os lados
+	padding-top:20px > só em cima
+	margin-left: 40px
+	ESPAÇAMENTO EXTERNO
+	margin:40px (para todos os lados)
+	margin-right:40px
+	
+	TAG PARA FAZER LISTAS SEM USAR O PARÁGRAFO(TEMOS DOIS TIPOS NÃO ORDENADOS <ul></ul> E ORDENADOS<ol></ol>)
+	PARA CADA ITEM TEMOS QUE USAR A TAG lIST ITENS = <li></li>
+
+	FORMAS DE MARCAR O CSS (USANDO AS TAGS E IDENTIFICADORES)
+
+	CONCEITOS DE CLASSES NO CSS
+	CLASSE: SERVEM PARA MARCARMOS ITENS PARA POSTERIORMENTE POR ESTILOS EM CADA UM DELES MAS REPETÍVEIS.
+	ex: class = "nomequequero"
+	no documento CSS é representado não com o identifcador # que nem o ID mas sim com .
+	ex: .nomequequero{ } 
+
+	CRIANDO DIVISÃO NO SITE
+	criar uma separação entre as duas seções, a primeira do trecho de apresentação e a segunda com os benefícios aos clientes
+	Tag <div></div>
+
+	INLINE E BLOCK
+	comportamento de uma tag ocupar a largura inteira da pagina é chamada block
+	uma imagem não bloqueia o conteúdo, ela deixa que tenha outros conteudos que se chama inline
+	o elemento inline não deixa alterar por exemplo o espaçamento interno e externo dele
+	existe uma terceira caracteristica quando ele é inline e block ou seja bloqueia uma largura mas a largura é fixa, e ele deixa eu mecher no espaçamento interno e externo.
+	display: inline-block
+	por default ele já vem alinhado a linha de baixo e queremos que seja alinhado a linha de cima para isso usamos o: vertical-align: top
+
+	CABEÇALHO
+	A INFORMAÇÃO MAIS IMPORTANTE DO SITE: <header></header>
+--> 

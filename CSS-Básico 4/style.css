@@ -1,0 +1,318 @@
+body{
+	font-family: 'Montserrat', sans-serif;/*quando boto no body, ele aplica a todo o conteúdo dentro do site*/
+}
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+main {
+	
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+.banner{
+	width:100%; /*porcentagem da largura da página*/
+}
+
+.titulo-principal{
+	text-align: center; /*alinhado ao centro*/
+	font-size: 2em; /*o dobro da fonte padrão, o tamanho base são 15pix, colocando 2em significa dizer que o que eu quero é 2x o tamanho base = 2em*/
+					/*logo essa fonte terá 30px*/
+	margin: 0 0 1em;/*espaçamento para baixo que seja proporcional ao tamanho da fonte 1 espaço para baixo*/ 
+	clear: left; /*limpando o float para não ficar mal formatado*/
+	color: rgba(0, 0, 0, 0.3); /*o rgba permite trabalhar com a opacidade*/
+	text-shadow: 2px 2px #0000FF;
+} 
+
+.titulo-principal:first-letter { /*pseudo-elementos*/
+	font-weight: bold;
+	color: blue;
+}
+
+p:first-line{ /*pseudo-elemento, , toda primeira linha de nossos textos estará em itálico*/
+	font-style: italic;
+	color: red;
+}
+
+.titulo-principal:before{ /*pseudo-elemento*/
+	content: "[ ";
+}
+
+.titulo-principal:after{ /*pseudo-elemento*/
+	content: " ]"; 
+}
+
+.principal{
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+.principal p {
+	margin: 0 0 1em;
+}
+.principal strong {
+	font-weight: bold;
+}
+.principal em{
+	font-style: italic;
+}
+
+.utensilios{
+	width: 120px;/*largura de 150px*/
+	float: left;/*escolhemos o lado que ele quer que flutue. o elemento está colado na esquerda e os textos começam na mesma linha dele*/
+	margin: 0 20px 20px 0; /*a margem ela é distribuida cima, direita, baixo e esquerda.*/
+}
+
+.mapa {
+	padding: 3em 0; /*3em para cima e para baixo e 0 para as laterais*/
+	background: linear-gradient(#FEFEFE,#888888); /*criando o gradiente linear, o 45deg indica a inclinação que começa o gradiente*/
+	/*background: radial-gradient( 90deg, orange 50%/*metade da pagina vai ficar laranja*, blue, red, black); /*ficará com circulos a volta do gradient*/
+}
+.mapa-conteudo{
+	width: 940px; /*largura de 940px*/
+	margin:  0 auto; /*margem*/
+}
+.mapa p{
+	padding: 0 0 2em;/*espaçamento externos, para baixo de 2em*/
+	text-align:center;
+}
+.beneficios{
+	padding: 3em 0;
+	background: #888888;
+	box-shadow: inset 0 0 30px #FF0000; /*criação de sombra interna, ela irá ser posicionada a partir do centro*/
+										/*o pixel 30px será o espaçamento para funcionar, agora a sombra é interna ao elemento*/
+}
+
+.conteudo-beneficios{
+	width: 640px;
+	margin: 0 auto;
+}
+.lista-beneficio{
+	width: 40%;
+	display: inline-block; /*para deixar de ser block e não ocupar 100% da largura, no entanto ainda irá faltar que os elementos fiquem colados para que apareçam um do lado do outro.*/
+	vertical-align: top; /*para a lista não ficar alinhada para parte de baixo e sim pela parte de cima*/
+}
+
+.itens{
+	line-height: 1.5 ;/*altura da linha, para os elementos não ficarem colados, o natural é 1 */
+}
+
+.itens:first-child{ /*usaremos os pseudo-elementos para especificar um elemento que quero, também podemos marcar como last-child
+					o que é útil em uma tabela ou somatório que o último ítem é o que eu quero*/
+font-weight: bold;
+}
+
+/*outras formas de pseudo-elementos*/
+/*.itens:nth-child(2){ /*no parentese vai qual elemento eu quero, também posso colocar funções para todas as listas pares{
+	font-weight: bold;
+}*/
+/*.itens: nth-child(2n); /*quer dizer que estou pegando todos os elementos pares da nossa*/
+
+.itens:before { /*pseudo-elemento*/
+	content: "✯";
+}
+.imagem-beneficios{
+	width: 60%;/*largura de 60%*/
+	opacity: 1;
+	transition: 400ms; /*usando uma transição de 400ms*/
+	/*box-shadow: 10px 10px #000000;*/ /*adicionará uma sombra de 10px no eixo X e 10px no eixo Y de cor preta*/
+	/*box-shadow: 10px 10px 5px #000000;*/ /*para melhorar ainda posso adicionar uma terceira propriedade chamada blur, que é o grau de espalhamento deesa sombra
+									vai deixar de ser sombra solida tendo uma quantidade de pixel de ir do solido para o transparente*/
+	/*box-shadow: 10px 10px 30px 20px #000000;*/ /*temos o 4º elemento que é a intensidade da borda, que é a partir do eixo dela (tamanho do elemento),
+											 o quao mais ela irá se espalhar*/
+	/*podemos adicionar várias sombras adicionando uma vírgula*/
+	box-shadow: 10px 10px 30px 20px #000000, -10px -10px yellow, -20px 20px rgba(255,0,0,0.5);
+}
+.imagem-beneficios:hover{ /*quando o mouse estiver por cima eu vejo 100%*/
+	opacity: 0.3;
+}
+.video{
+	width: 560px;
+	margin: 2em auto; /*1em para cima e para baixo e automatica nas laterais, centralizando assim o vídeo*/
+}
+
+main > p{ /*chama todos os ps que são filhos diretos do main*/
+	background: yellow;
+}
+
+img + p{ /*para pegar o paragrafo ao lado da image, img (elemento ancora) + (primeiro irmão ou próximo irmão)*/
+			/*para acessar o primeiro irmão de determinado elemento*/
+	background: blue;
+}
+
+img ~ p{ /*para selecionar todos os elementos*/ /*Para acessar todos os irmãos de determinado elemento*/
+	background: green;
+}
+
+.principal p:not(#missao){ /*a principal eu quero selecionar todos os paragrafos que não são a #missão*/
+	background: pink;
+}
+
+/*
+@media screen and (max-width: 480px) { /*colocamos um media, botamos um valor de que tipo de tela estamos buscando, e a minha pesquisa que é
+								  todas as telas que tenham até 480px ou seja que a largura máxima seja 480px, quero entregar um estilo diferente */ 
+/*body{
+background: red;
+}
+*/
+
+@media screen and (max-width: 480px){ /*se colocarmos uma largura automatica o elemento colado a direita passa a ficar do tamanho da tela,
+										e temos vários elementos com largura de 940px,*/
+		.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{ /*aqui só mudarei a largura da caixa e da principal */
+				/*quando estamos sobrescrevendo uma coisa para layour responsivo a gente mexe só no que a gente quer que mude*/
+		width: auto;
+	}
+	h1{
+		text-align: center;
+	}
+	nav{
+		position: static; /*fazer que o menu fique na posição estatica*/ 
+	}
+	.lista-beneficio, .imagembeneficios{
+		width: 100%;
+	}
+}
+}
+/*nosso vídeo está com a largura fixa de iframe de 560 devemos por 100%*/

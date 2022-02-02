@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Produtos - Barbearia Alura</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="produtos.css">
+</head>
+<body>
+	<header>
+		<div class="caixa">
+			<h1 > <img src="logo.png"></h1>
+			<nav> 
+				<ul>
+					<li> <a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li> <a href="http://www.google.com.br">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<ul class="produtos">
+			<li>
+				<h2>Cabelo</h2>
+				<img src="cabelo.jpg">
+				<p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+				<p class="produto-preco">R$ 25,00</p>
+			</li>
+			<li>
+				<h2>Barba</h2>
+				<img src="barba.jpg">
+				<p class="produto-descricao">Corte e desenho profissional de barba </p>
+				<p class="produto-preco">R$ 18,00</p>
+			</li>
+			<li>
+				<h2>Cabelo + Barba</h2>
+				<img src="cabelo+barba.jpg">
+				<p class="produto-descricao">Pacote completo de cabelo e barba</p>
+				<p class="produto-preco">R$ 35,00 </p>
+			</li>
+		</ul>
+	</main>
+	<footer>
+		<img src="logo-branco.png">
+		<p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+	</footer>
+</body>
+</html>
+
+<!--ESTRUTURANDO A NAVEGAÇÃO
+para direcionar algum texto para algum conteudo usamos a ancora tag <a href=""></a>
+
+	ARRUMANDO A LISTA
+mecher na forma do display tem dois tipos inline e block
+inline o conteudo da tag é do tamanho que está alí largura e altura daquela imagem
+block - o tamanho vai ser sempre 100% da pagina
+todo o site tem estrutura de navegação, usamos o <nav></nav>
+Exibir item com letras maiusculas no CSS: text-transform: uppercase;
+Exibir item em negrito no CSS é font-weight: bold;
+Mecher no tamano da fonte no CSS é font-size: 22px;
+para retirar o sublinhado que fica no texto que manda para outro link no css é: text-decoration: none;
+para aumentar o espaçamento externo no CSS é margin: 0 0 0 15px (seguem a ordem de primeiro pro topo, direita, baixo e esquerda) 
+
+	LIMPANDO O CSS
+para tirar o espaçamento e colocando o estilo automaticamente que o navegador faz automaticamente para zerar a margem e espaçamento no CSS temos que fazer um monte de detalhes como criação de arquivo de reset.css que já tem na net a ordem importa no head sendo ele primeiro e em seguida o nosso style.css
+
+	COMO FUNCIONA O POSICIONAMENTO
+Se eu quiser depois do elemento carregado mudar o ponto inicial a partir do ponto inicial, para isso muda a posição para relativa a posição inicial: position: relative
+para criar um espaçamento desse elemento em relação ao topo eu posso usar o: top: 10px, left: 10px
+para mudar o posicionamento desse elemento devo mudar o posicionamento inicial dele, não pode ser mais static (quando está parado padrão) e nem relativo (deslocado, mas o ponto inicial dele continua aonde deveria estar), deve ter o ponto inicial no outro canto: position: absolute (que é posicionamento absoluto relação a outra coisa, por exemplo ao cabeçalho),
+Para centralizar de modo automatico para se calcular automaticamente no CSS o espaçamento externo (a margem) = margin: 0 auto;
+
+	DIVISÕES SEMÂNTICAS
+na divisões de conteúdo podemos usar a tag semantica <main></main> que traz o principal, a coisa mais importante, que são no exemplo os itens de produto.
+	CRIANDO LISTAS COMPLEXAS
+<h2></h2><p></p>
+	REFORÇANDO O INLINE-BLOCK
+propriedade display permite que você defina a maneira como determinado elemento HTML deve ser renderizado.
+display: block; >Todos os elementos vão ficar empilhados
+display: inline; >todos os elementos ficam um do lado do outro
+display: inline-block; > quando queremos definir um valor para a propriedade width. Sob certas circunstâncias, alguns navegadores ignoram a propriedade width para elementos inline, então definindo display: inline-block para tais elementos você forçará o navegador a reconhecer o valor definido para a propriedade width.ff
+
+	APLICANDO BORDAS
+A borda tem 3 aspectos importante o tamanho, o tipo e a cor. para fazer isso declara border-color, border-width e border-style.
+temos a declaração para se fazer as 3 coisas em uma linha só que é border: 2px solid #000000; 
+
+	BORDAS ARRENDONDADAS
+para declarar essa configuração usamos o border-radius:10px (arredonda todas iguais), border-radius-top-left (canto superior esquerdo), border-radius-botton-right (inferior direito)
+
+	PSEUDO-CLASSES DE ESTADO
+Para mudar o comportamento do elemento em que o mouse está por cima (os href de links para outros endereços) usa-se o hover
+no CSS identificamos o "elemento".hover
+
+	APLICANDO HOVER E ACTIVE
+Hover-quando o mouse passa por cima
+active-quando o mouse está sendo clicado
+
+	RODAPÉ
+a tag do rodapé é <footer></footer>
+para carregar uma imagem de fundo como background usamos o background: url"nomedaimagem.jpg"
+
+	CARACTERES ESPECIAIS
+entra no site https://unicode-table.com/pt/ coloca copyright e copia a forma descrita como entidade
+	-->
